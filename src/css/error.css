@@ -1,0 +1,12 @@
+body {
+  background: #efefef; }
+
+.masthead.segment {
+  display: flex;
+  min-height: 600px;
+  padding: 1em 0em; }
+  .masthead.segment h1 {
+    font-size: 4em;
+    font-weight: 400; }
+
+/*# sourceMappingURL=error.css.map */

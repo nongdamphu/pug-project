@@ -1,0 +1,205 @@
+extends ../templates/layout
+
+block body
+  .menu.px-5
+    nav.search.navbar.navbar-expand-lg.navbar-light
+      a.navbar-brand.mb-2(href='#')
+        img(src='https://st.hzcdn.com/res/2921/pic/houzz_logo.svg?v=2921', alt='#')
+      #hin.collapse.navbar-collapse.row
+        .nav-item.col-lg-8
+          .input-group.my-3
+            .input-group-prepend
+              button.bg-white.border-right-0.border-input.rounded-left(type='button')
+                i.fas.fa-search
+            input.form-control.border-left-0.mr-3(type='text', placeholder='Search Photos')
+        ul.navbar-nav.col-lg-4.d-flex.justify-content-around
+          li.nav-item.align-self-center
+            a.nav-link.text-center(href='#') FAVORITES
+          li.nav-item.dropdown.align-self-center
+            a#hi.nav-link(data-toggle='dropdown', href='#')
+              i.fas.fa-shopping-cart
+            .dropdown-menu(aria-labelladby='hi')
+              a.dropdown-item(href='#') Item1
+              a.dropdown-item(href='#') Item2
+              .dropdown-divider
+              a.dropdown-item(href='#') Item3
+          li.nav-item.align-self-center
+            a.nav-link(href='#')
+              i.fas.fa-user
+              |                             Signin
+    nav.mainmenu.navbar.navbar-expand-lg.navbar-light
+      button.navbar-toggler.collapsed.ml-auto(type='button', data-toggle='collapse', data-target='#my', aria-controls='my', aria-label='Toggle navigation', aria-expanded='false')
+        span.navbar-toggler-icon
+      #my.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto.d-flex.justify-content-around.w-100
+          li.nav-item.dropdown
+            a#my1.nav-link.text-uppercase.font-weight-bolder(data-toggle='dropdown', href='#')
+              i.fas.fa-folder.mr-2
+              | PHOTOS
+            .dropdown-menu(aria-labelladby='hi')
+              a.dropdown-item(href='#') Item1
+              a.dropdown-item(href='#') Item2
+              .dropdown-divider
+              a.dropdown-item(href='#') Item3
+          li.nav-item.dropdown
+            a#my2.nav-link.text-uppercase.font-weight-bolder(data-toggle='dropdown', href='#')
+              i.fas.fa-cart-arrow-down.mr-2
+              | SHOP BY
+              |                             DEPARTMENT
+            .dropdown-menu(aria-labelladby='hi')
+              a.dropdown-item(href='#') Item1
+              a.dropdown-item(href='#') Item2
+              .dropdown-divider
+              a.dropdown-item(href='#') Item3
+          li.nav-item.dropdown
+            a#my3.nav-link.text-uppercase.font-weight-bolder(data-toggle='dropdown', href='#')
+              i.fas.fa-user-lg.mr-2
+              | FIND PROFESSIONALS
+            .dropdown-menu(aria-labelladby='hi')
+              a.dropdown-item(href='#') Item1
+              a.dropdown-item(href='#') Item2
+              .dropdown-divider
+              a.dropdown-item(href='#') Item3
+          li.nav-item.dropdown
+            a#my4.nav-link.text-uppercase.font-weight-bolder(data-toggle='dropdown', href='#')
+              i.fas.fa-book-open.mr-2
+              | STORIES & ADVICE
+            .dropdown-menu(aria-labelladby='hi')
+              a.dropdown-item(href='#') Item1
+              a.dropdown-item(href='#') Item2
+              .dropdown-divider
+              a.dropdown-item(href='#') Item3
+          li.nav-item.dropdown
+            a#my5.nav-link.text-uppercase.font-weight-bolder.text-success(data-toggle='dropdown', href='#')
+              i.fas.fa-gift.mr-2
+              | SALE
+            .dropdown-menu(aria-labelladby='hi')
+              a.dropdown-item(href='#') Item1
+              a.dropdown-item(href='#') Item2
+              .dropdown-divider
+              a.dropdown-item(href='#') Item3
+  section
+    .banner
+      #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='https://st.hzcdn.com/simgs/c831f96800967bed_16-7477/farmhouse-dining-room.jpg', alt='#')
+          .carousel-item
+            img.d-block.w-100(src='https://st.hzcdn.com/simgs/fe610cb60273bd3f_16-2218/mediterranean-living-room.jpg', alt='#')
+          .carousel-item
+            img.d-block.w-100(src='https://st.hzcdn.com/simgs/0611b984009c5458_16-3374/mediterranean-patio.jpg', alt='#')
+      .view-banner
+        h1.display-4.font-weight-bold The New Way to Design Your Home
+        h4 Get Inspired. Shop Products. Find Pros.
+        button.btn.btn-success.p-3.px-5.my-4(type='submit')
+          | Get
+          | Started
+  .content.px-5
+    .text-center
+      h2.py-4 Create the home you've always wanted
+      ul.nav.row
+        li.nav-item.col-sm-12.col-lg-4
+          a.nav-link(href='#')
+            i.fas.fa-home
+            .text-center
+              h3.my-3 Discover design ideas
+              p Browse more than 17 million photos and filter based on your taste
+        li.nav-item.col-sm-12.col-lg-4
+          a.nav-link(href='#')
+            i.fas.fa-chalkboard-teacher
+            .text-center
+              h3.my-3 Discover design ideas
+              p Browse more than 17 million photos and filter based on your taste
+        li.nav-item.col-sm-12.col-lg-4
+          a.nav-link(href='#')
+            i.fas.fa-couch
+            .text-center
+              h3.my-3 Discover design ideas
+              p Browse more than 17 million photos and filter based on your taste
+      button.btn.btn-success.p-3.px-5.my-4(type='submit') Get Started
+    .d-flex.row.no-gutters
+      .col-12.col-md-6.col-xl-4.p-3
+        .card
+          img.card-img-top(src='https://st.hzcdn.com/fimgs/bbf1322d0a661ce4_6679-w320-h265-b0-p0--midcentury-living-room.jpg', alt='#')
+          .card-body
+            h5.card-title.pb-3.border-bottom
+              i.fas.fa-book-open.mr-2
+              | Stories From
+              |                             Houzz
+            p.card-text
+              | The renovations of these popular ranch-style houses bring modern
+              | convenience while honoring
+            .d-flex
+              p.mr-auto.text-muted 13 hours ago
+              p.text-muted 1 Bookmark | 1 Comment
+      .col-12.col-md-6.col-xl-4.p-3
+        .card
+          img.card-img-top(src='https://st.hzcdn.com/fimgs/bbf1322d0a661ce4_6679-w320-h265-b0-p0--midcentury-living-room.jpg', alt='#')
+          .card-body
+            h5.card-title.pb-3.border-bottom
+              i.fas.fa-book-open.mr-2
+              | Stories From
+              |                             Houzz
+            p.card-text
+              | The renovations of these popular ranch-style houses bring modern
+              | convenience while honoring
+            .d-flex
+              p.mr-auto.text-muted 13 hours ago
+              p.text-muted 1 Bookmark | 1 Comment
+      .col-12.col-md-6.col-xl-4.p-3
+        .card
+          img.card-img-top(src='https://st.hzcdn.com/fimgs/bbf1322d0a661ce4_6679-w320-h265-b0-p0--midcentury-living-room.jpg', alt='#')
+          .card-body
+            h5.card-title.pb-3.border-bottom
+              i.fas.fa-book-open.mr-2
+              | Stories From
+              |                             Houzz
+            p.card-text
+              | The renovations of these popular ranch-style houses bring modern
+              | convenience while honoring
+            .d-flex
+              p.mr-auto.text-muted 13 hours ago
+              p.text-muted 1 Bookmark | 1 Comment
+      .col-12.col-md-6.col-xl-4.p-3
+        .card
+          img.card-img-top(src='https://st.hzcdn.com/fimgs/bbf1322d0a661ce4_6679-w320-h265-b0-p0--midcentury-living-room.jpg', alt='#')
+          .card-body
+            h5.card-title.pb-3.border-bottom
+              i.fas.fa-book-open.mr-2
+              | Stories From
+              |                             Houzz
+            p.card-text
+              | The renovations of these popular ranch-style houses bring modern
+              | convenience while honoring
+            .d-flex
+              p.mr-auto.text-muted 13 hours ago
+              p.text-muted 1 Bookmark | 1 Comment
+      .col-12.col-md-6.col-xl-4.p-3
+        .card
+          img.card-img-top(src='https://st.hzcdn.com/fimgs/bbf1322d0a661ce4_6679-w320-h265-b0-p0--midcentury-living-room.jpg', alt='#')
+          .card-body
+            h5.card-title.pb-3.border-bottom
+              i.fas.fa-book-open.mr-2
+              | Stories From
+              |                             Houzz
+            p.card-text
+              | The renovations of these popular ranch-style houses bring modern
+              | convenience while honoring
+            .d-flex
+              p.mr-auto.text-muted 13 hours ago
+              p.text-muted 1 Bookmark | 1 Comment
+      .col-12.col-md-6.col-xl-4.p-3
+        .card
+          img.card-img-top(src='https://st.hzcdn.com/fimgs/bbf1322d0a661ce4_6679-w320-h265-b0-p0--midcentury-living-room.jpg', alt='#')
+          .card-body
+            h5.card-title.pb-3.border-bottom
+              i.fas.fa-book-open.mr-2
+              | Stories From
+              |                             Houzz
+            p.card-text
+              | The renovations of these popular ranch-style houses bring modern
+              | convenience while honoring
+            .d-flex
+              p.mr-auto.text-muted 13 hours ago
+              p.text-muted 1 Bookmark | 1 Comment
+

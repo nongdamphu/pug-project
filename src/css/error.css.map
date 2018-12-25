@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,IAAI;EACF,UAAU,ECEC,OAAO;;ADApB,iBAAiB;EACf,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,OAAO;EAEhB,oBAAE;IACA,SAAS,EAAE,GAAG;IACd,WAAW,EAAE,GAAG",
+"sources": ["../sass/error.sass","../sass/_variables.sass"],
+"names": [],
+"file": "error.css"
+}
